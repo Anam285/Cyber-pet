@@ -57,10 +57,9 @@ input{
 
 @keyframes catLeap{
     0%{margin-left:50%;}
-    20%{margin-left:45%;}
+    20%{margin-left:49%;}
     30%{margin-top:-10%;}
     60%{margin-top:-40%;}
-    70%{margin-top:-30%;}
     100% {margin-left: -50%;}
  }
 .leap {
