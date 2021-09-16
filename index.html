@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Cyber-pet</title>
+</head>
+<body>
+    <h1>Cyber-Pet</h1>
+    <div class = "container">
+        <div class ="AboutPet">
+            <label>Pet's Name:
+            <input type="text" id="petfName"/></label>
+        </div>
+        <div class= "AboutPet">
+            <label >Pet's Age:
+            <input type="text" id="petnAge"/> </label></div> 
+        <div class = "stats">    
+           
+                <label >Health:
+                <progress id="health" max="100" value="70"></label>  </progress>
+            
+           
+                <label >Hunger:
+                <progress id="hunger" max="100" value="50"></label>  </progress>
+        
+           
+                <label >Energy:
+                <progress id="energy" max="100" value="30">  </label></progress>
+                
+                <label >Sleepy:
+                <progress id="sleep" max="100" value="30"> </label> </progress>
+                
+                <label> Bored:
+                <progress id="bored" max="100" value="30"></label>  </progress>
+                
+                <label >likes you :
+                <progress id="like" max="100" value="30"></label>  </progress>
+            
+        </div>
+        <div class ="buttons">
+            <button id="nameButton" type="button" >Health</button>
+        
+            <button id="callButton" type="button" >Walk</button>
+            <button id="sitButton" type="button" >Sit</button>
+            <button id="leapButton" type="button" >Leap</button>
+            <button id="feedButton" type="button" >Feed</button></div>
+        <div class = "display">
+            <div class="content"></div>
+            <div class="pethunger"></div></div>
+            
+        <div class = "catBackground cat-container">
+        <div class="cat-container contain ">
+            <div class="cat">
+
+            </div></div></div>
+
+    </div>
+    
+
+    <script src= "app.js"></script>
+</body>
+</html>

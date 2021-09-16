@@ -1,0 +1,141 @@
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* background-color:pink; */
+}
+input{
+    border: 1px solid red;
+}
+.AboutPet{
+    width: 90%;
+    height:50px;
+    /* border: 2px solid yellow; */
+    margin: 0 auto;
+    
+}
+.stats{
+    display: flex;
+}
+.display{
+    margin: 0 auto;
+    font-family: fantasy;
+    font-size:30px;
+}
+
+
+.container{
+    display:flex;
+    flex-wrap:nowrap;
+    min-width: 100vh;
+    min-height:80vw;
+    border: 1px solid green;
+    
+    flex-direction: column;
+    background-image: url(images/pethome.jpg);
+    background-position:0px -180px;
+
+    
+}
+
+.cat-container{
+    width: 700px;
+    height: 300px;
+    /* border: 1px solid purple; */
+    
+    position:absolute;
+    left: 25%;
+    top:25%;
+    z-index: 1;
+
+}
+.cat-leap{   
+    width:220px;
+    height:120px;
+    animation: catLeap 4s 1;
+}
+
+@keyframes catLeap{
+    0%{margin-left:50%;}
+    20%{margin-left:45%;}
+    30%{margin-top:-10%;}
+    60%{margin-top:-40%;}
+    70%{margin-top:-30%;}
+    100% {margin-left: -50%;}
+ }
+.leap {
+    background: url(images/walk-cat.png) -220px -576px;
+    animation:leaping_cat 2.5s steps(13) 3;
+
+ }
+@keyframes leaping_cat{
+    from{
+        background-position: -690px 0;
+        
+    }
+    to{
+        background-position: -690px -1490px;
+    }
+}
+
+
+
+
+.move{
+    animation: moveanimation 4s 1;
+}
+.cat{
+    width:220px;
+    height:120px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 170px;
+    background: url(images/walk-cat.png);
+    /* padding-top: 30px;; */
+
+
+}
+
+.position{
+    position:absolute;
+    top:15%;
+    left:-60%;
+}
+
+.catMove{
+    background: url(images/walk-cat.png);
+    animation:walking_cat 1.0s steps(12) 3;
+}
+
+.catSit{
+    background: url(images/walk-cat.png) -220px -576px;
+    animation:sitting_cat 2.0s steps(6) 1;
+}
+
+@keyframes walking_cat{
+    from{
+        background-position: 0 0px;
+        
+    }
+    to{
+        background-position: 0 -1375px;
+    }
+}
+
+@keyframes moveanimation{
+   0%{margin-left:0%;}
+   /* 50%{margin-left:-40%;} */
+   100% {margin-left: -100%;}
+}
+
+
+
+@keyframes sitting_cat{
+    from{
+        background-position: -220px 0;
+        
+    }
+    to{
+        background-position: -220px -688px;
+    }
+}
